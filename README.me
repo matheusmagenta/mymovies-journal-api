@@ -1,0 +1,145 @@
+myMovies app
+
+App to track and review watched movies, get recommendations and know where to watch. Fullstack from scratch. 
+
+- Fullstack with MERN Stack (MongoDB, Express, React and Node.js) 
+- Pagination
+- Async/await, Fetch, Axios
+- API consuming
+- Testing
+- Accessibility
+- Clean Code (https://github.com/ryanmcdermott/clean-code-javascript)
+- Scalability
+- Documenting process (Next steps: NestJS, Clean Code, On Production)
+
+// TODO:
+OK - show edit/update movie review
+OK - use one request to fill components of moviepage
+OK - fix adding review to database
+OK - show review if any
+OK - redirect after editing review
+OK - redirect after delete review
+OK - show trending movies
+OK - fix fetching and edit the exact review instead of the first review
+OK - avoid add/show the same movie to mymovies list when save new/edited review.
+OK - each user edits and delete own mymovies list
+OK - handle error during login to avoid crash
+OK - show toast during login register error
+OK - avoid register with same email and handle error
+OK - implement star rating system
+OK - change current interfaces to react bootstrap interfaces
+OK - change login and register from dropdown nav to modal
+OK - autoclose navbar when click
+OK - implement latest reviews feature
+OK - implement properly most reviewed movies
+- implement search input in landing page and navbar
+- improve latest reviews feature (with link to movie and showing movie title in landing page)
+- fix size of login page in add review tab without being logged (desktop version)
+- fix position of nav links in desktop version and mobile version at the start
+- check layout on desktop version of every page
+- fix order to tabs in every "movie page"
+- clean style.css
+- change buttons text for icons when possible
+- improve ui of movie page
+- implement placeholder of movie page
+- implement unit test (Jest)
+- deploy api
+- deploy frontend
+- automatic deploy
+- refactor and show watchlist
+- improve landing page
+- rename variables (clean code)
+- refactor mylist to show reviews (or preview of reviews)
+- validate data form formats (login and register)
+
+
+// REFACTORING (RAFAEL)
+- AUTHENTICATION
+       - https://www.youtube.com/watch?v=sYe4r8WXGQg
+    OK - database, token
+       - https://www.youtube.com/watch?v=6WB16wZS61c
+    OK - context API react
+       - https://www.youtube.com/watch?v=KISMYYXSIX8
+OK - refactor routes /movies/:id (get, post, delete): methods already 'say' what to do
+OK - implement toast (success/error)
+OK - avoid duplicated movie in mymovies list
+OK - redirect after register user
+OK - show/handling more comments/reviews on the same movie
+OK - implement a schema to reviews by itself (which one was the most reviewed). 1.reviews / 2.movies / 3.users
+OK - change controllers names
+- callback (execute a function as parameter after an action): parent-child communication
+- what to do if request is unsuccessful or the application breaks (beyond happy flow)
+- how to handle an answer in case of error
+- refactor api/movies/:id padrão de arquitetura REST
+- error folder
+- success folder
+- block send button after first request ('is loading' status)
+- handling promises (error and success)
+- implement useMemo, useCallback
+- lei de usabilidade (10 heurísticas de nielsen)
+    - https://brasil.uxdesign.cc/10-heur%C3%ADsticas-de-nielsen-para-o-design-de-interface-58d782821840
+        - visibilidade do status do sistema
+        - controle e liberdade para o usuário
+        - consistência e padronização
+        - prevenção de erros
+        - "reconhecer > memorizar"
+        - ajude os usuários a reconhecerem e corrigirem os erros
+    - "quando faz, tem que saber"
+    - "liberdade de ir e vir"
+    
+
+// SEARCH / RESULTS
+OK implement pagination
+- implement genre newest/best and watchprovider filters to search
+- add keywords to search filter
+- implement filters to results of any search (discover or by title)
+- dropdown reference https://codepen.io/aaroniker/pen/MWgjERQ
+- implement search on landing page
+- improve pagination design
+- sort search results
+- sort bookmark results
+- search only in bookmark results
+
+// USER 
+OK - create trending feature
+OK - create where to watch feature
+OK - implement user login authentication with db
+- improve data model
+- divide mymovies list in watched - want to watch
+- improve bookmark - mymovies interface
+- create watchlist feature
+- create suggestions feature
+- improve suggestions feature (movies liked / disliked)
+
+// UX/UI
+OK - make it responsive
+OK - after save review, redirect to other page
+OK - implement flexbox and responsive design
+OK - show alert after adding movie to mymovies list
+OK - improve UI and UX
+- improve topbar: mymovies, useraccount
+
+// DATABASE / BACKEND
+OK - substitute localStorage for mongo database 
+OK - implement movies routes (create OK, retrieve OK, delete OK)
+OK - implement review routes (create OK, retrieve OK, update OK, delete OK)
+
+// AUTHENTICATION / AUTHORIZATION
+OK - each user access own mymovies list
+OK - users name appears as author's review
+OK - implement logout using token
+- protect some routes (access only logged)
+- admin user
+
+// DESIGN PATTERN/ OTHERS
+- implement typescript
+- html semantic
+
+// SECURITY / AUTHENTICATION
+OK - password validation secure with database
+- sanitize
+
+// IS THIS APP SOLVING A BUSINESS PROBLEM? 
+- display which streaming platform of suggested movies
+- recommendation system
+- user community share reviews about movies (review can be public or not)
